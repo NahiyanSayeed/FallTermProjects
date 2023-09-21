@@ -13,7 +13,7 @@ body {
 
 header {
 
-    background: #974fe2;
+    background: #ffffff;
 }
 
 header::after {
@@ -37,7 +37,6 @@ footer::after {
 nav {
     text-align: center;
 }
-
 nav ul {
     margin: 0;
     padding: 0;
@@ -47,24 +46,48 @@ nav ul {
 nav li {
     display: inline-block;
     margin-left: 50px;
-    margin-bottom: 20px;
-    padding-top: 20px;
-
+    margin-bottom: 5px;
+    padding-top: 5px;
+    
     position: relative;
 }
 
 nav a {
-    color: #ffffff;
+    color: #c66dfa;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 16px;
 }
-
 nav a:hover {
     color: #000000;
 }
 
-
 #home {
     color: #ffffff;
+    padding-left: 20px;
+}
+#about {
+    color: #ffffff;
+    text-align: center;
+    padding-left: 20px;
+}
+#about h2{
+    text-align: left;
+}
+#about p{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+#about table {
+    margin-left: auto;
+  margin-right: auto;
+}
+#skills {
+    color: #ffffff;
+    padding-left: 20px;
+}
+#contact {
+    color: #ffffff;
+    padding-left: 20px;
+    padding-bottom: 20px;
 }

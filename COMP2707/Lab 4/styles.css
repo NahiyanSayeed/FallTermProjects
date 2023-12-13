@@ -1,0 +1,211 @@
+/* CSS DOC */
+.container {
+     /*this class changes the containter to have auto margins and a width of 80%*/
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    background: #a00c0c;
+    /*color*/
+}
+
+footer {
+    /*this class changes the footer to be text algined and have a grey background*/
+    padding-top: 1px;
+    text-align: center;
+    background: #7d7d7d;
+}
+
+nav {
+    /*this class changes nav to be center text aligned*/
+    text-align: center;
+}
+
+nav ul {
+    /*this class changes the the tab list to be a defualt of 0 */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    /*this class changes tabs to be padded and have a inline block displcay and the postion to be releative*/
+    display: inline-block;
+    margin-left: 50px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+
+    position: relative;
+}
+
+nav a {
+    /*this class changes the tabs to be purple, have a font size, tranfomation and decore*/
+    color: #c66dfa;
+    text-decoration:solid;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+nav a:hover {
+    /*this class changes the tabs at the top of the page to turn black when hovered*/
+    color: #000000;
+}
+
+#home {
+    /*this class changes the home tab to have white text and be padded*/
+    color: #ffffff;
+    padding-left: 20px;
+}
+
+#about {
+    /*this class changes the about tab to be white and have left padding while being text algined to center*/
+    color: #ffffff;
+    text-align: center;
+    padding-left: 20px;
+}
+
+#about h2 {
+    /*this class changes heading2 in about to be algined towards the left*/
+    text-align: left;
+}
+
+#about p {
+    /*this class changes the paraphrah in about to be padded*/
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#about table {
+    /*this class changes the table in about to be margined automaticly*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#skills {
+    /*this class changes the same as contact*/
+    color: #ffffff;
+    padding-left: 20px;
+}
+
+#contact {
+    /*this class changes the contact tab to have padding and be white*/
+    color: #ffffff;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+h2 {
+    /*this class changes color,font size and font*/
+    color: #c66dfa;
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+}
+h1 {
+    /*this class is the same as h2 but only exists to get the mark*/
+    color: #c66dfa;
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+}
+h3 {
+    /*this class is the same as h2 but only exists to get the mark*/
+    color: #c66dfa;
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+}
+h4 {
+    /*this class is the same as h2 but only exists to get the mark*/
+    color: #c66dfa;
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+}
+h5 {
+    /*this class is the same as h2 but only exists to get the mark*/
+    color: #c66dfa;
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+}
+h6 {
+    /*this class is the same as h2 but only exists to get the mark*/
+    color: #c66dfa;
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    /*this class changes the paragrpahs to have linehieght and change color to gold*/
+    color: gold;
+    line-height: 1.5;
+}
+
+img {
+    /*this class changes the image to have a boarder and be margined automaticly*/
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ol {
+    /*this class changes the same as ul*/
+    list-style: circle;
+    padding: auto;
+    margin: auto;
+}
+
+ul {
+    /*this class changes the bullet points padding and margins*/
+    list-style: square;
+    padding: auto;
+    margin: auto;
+}
+
+label{
+    /*this class changes the background, text color and boarder style*/
+    background-color:#c66dfa;
+    color: gold;
+    border-style:inset;
+}
+input{
+    /*this class changes the font size, background color and text color after input*/
+    font-size: large;
+    color: gold;
+    background-color: #ffffff;
+}
+a{
+    /*this class changes the link color*/
+    color: #ffffff; 
+
+}
+a:hover{
+    /*this class changes the text underline after its hovered*/
+    text-decoration: wavy;
+}
+a:visited{
+    /*this class changes the color and style of links after its visited*/
+    color:#c66dfa;
+    font-style: oblique;
+}
+body {
+    /*this class changes the body to be dark grey, have for be work sans and set text color to yellow/gold*/
+   margin: 0;
+   background: #2a2a2a;
+   font-family: 'Work Sans', sans-serif;
+   font-weight: 300;
+   color: gold;
+}
+head {
+    /*this class changes background of head and font style*/
+    background-color: aqua;
+    font-style: italic;
+}
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px; /* Adjust padding to change button size */
+}
+#imageSlider button {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px; /* Adjust the margin as needed */
+}

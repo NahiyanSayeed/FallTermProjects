@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhmtl11/DTD/xhtml11.dtd">
+<html>
+<!-- Title: Tutorials-->
+<!-- Name: Spondon Sayeed-->
+<!-- ID: 110101278-->
+
+<head>
+    <meta charset="UTF-8">
+    <title> Tutorials - Computer Science Hub </title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Additional CSS styles for the search bar and tutorial list */
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .search-bar-container {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            /* Push the search bar and button to the right */
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+            /* Add a small margin between the input and button */
+        }
+
+        .search-bar input {
+            margin-right: 0;
+            /* Remove margin for the input */
+        }
+
+        .tutorial-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            /* Distribute items evenly */
+        }
+
+        .tutorial-item {
+            width: 30%;
+            /* Adjust the width as needed */
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .tutorial-item p {
+            color: white;
+        }
+
+        /* Clear the right margin for every third item to start a new row */
+        .tutorial-item:nth-child(3n) {
+            margin-right: 0;
+        }
+
+        .tutorial_logo {
+            height: 200px;
+            width: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="css-logo-shield.png" alt="Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="tutorials.html">Tutorials</a></li>
+                    <li><a href="student_resources.html">Student Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="main-content">
+        <h1>Tutorials</h1>
+
+        <div class="search-bar-container">
+            <!-- Search bar HTML -->
+            <div class="search-bar">
+                <input type="text" id="tutorialSearch" placeholder="Search tutorials...">
+                <button onclick="searchTutorials()">Search</button>
+            </div>
+        </div>
+
+        <!-- Tutorial list HTML -->
+        <ul class="tutorial-list">
+            <li class="tutorial-item">
+                <h2>CO OP Guide</h2>
+                <img src="CoopGuide.jpg" alt="Logo" class="tutorial_logo">
+                <a href="https://www.youtube.com/watch?v=rzCfCNXvJP4&ab_channel=SpinheadProductions"
+                    target="_blank">Link to External Resources</a>
+                <p>The purpose of this guide is to provide students with an informal guideline for participation within
+                    the Co-operative Education Program.</p>
+
+            </li>
+            <li class="tutorial-item">
+                <h2>Assembly Language in 100 Seconds</h2>
+                <img src="SystemProg.jpg" alt="Logo" class="tutorial_logo">
+                <a href="https://www.youtube.com/watch?v=4gwYkEK0gOk&t=70s&ab_channel=Fireship" target="_blank">Link to
+                    External Resources</a>
+                <p>Assembly is the lowest level human-readable programming language. Today, it is used for precise
+                    control over the CPU and memory on the bare metal hardware of a computer. Learn the basics Assembly
+                    with NASM in 100 Seconds. </p>
+
+            </li>
+            <li class="tutorial-item">
+                <h2>Basics of Computer Architecture</h2>
+                <img src="CompArch.jpg" alt="Logo" class="tutorial_logo">
+                <a href="https://www.youtube.com/watch?v=GRInNLx3Tug&ab_channel=NesoAcademy" target="_blank">Link to
+                    External Resources</a>
+                <p>A short guide on what computer architecture is and how it works</p>
+
+            </li>
+            <li class="tutorial-item">
+                <h2>HTML for Beginners</h2>
+                <img src="CompWeb.jpg" alt="Logo" class="tutorial_logo">
+                <a href="https://www.youtube.com/watch?v=PlxWf493en4&ab_channel=freeCodeCamp.org" target="_blank">Link
+                    to External Resources</a>
+                <p>If you're an absolute beginner in web development, you can learn the basics of HTML here. This video
+                    covers setting up an HTML file, and the basic HTML tags and what they mean.
+                </p>
+
+            </li>
+            <li class="tutorial-item">
+                <h2>SQL in 100 Seconds</h2>
+                <img src="SQL.jpg" alt="Logo" class="tutorial_logo">
+                <a href="https://www.youtube.com/watch?v=zsjvFFKOm3c&ab_channel=Fireship" target="_blank">Link to
+                    External Resources</a>
+                <p>Learn the fundamentals of Structured Query Language SQL!</p>
+
+            </li>
+            <li class="tutorial-item">
+                <h2>Game Development for Dummies</h2>
+                <img src="GameDev.jpg" alt="Logo" class="tutorial_logo">
+                <a href="https://www.youtube.com/watch?v=eANjGomWZp4&ab_channel=ThomasBrush" target="_blank">Link to
+                    External Resources</a>
+                <p>A short guide on what game development is and how it works</p>
+
+            </li>
+            <li class="tutorial-item">
+                <h2>100+ Computer Science Concepts Explained</h2>
+                <img src="CS.jpg" alt="Logo" class="tutorial_logo">
+                <a href="https://www.youtube.com/watch?v=-uleG_Vecis&ab_channel=Fireship" target="_blank">Link to
+                    External Resources</a>
+                <p>Learn the fundamentals of Computer Science with a quick breakdown of jargon that every software
+                    engineer should know. Over 100 technical concepts from the CS curriculum are explained to provide a
+                    foundation for programmers.</p>
+
+            </li>
+            <li class="tutorial-item">
+                <h2>Intro to Algorithms: Computer Science</h2>
+                <img src="CSintro.jpg" alt="Logo" class="tutorial_logo">
+                <a href="https://www.youtube.com/watch?v=rL8X2mlNHPM&ab_channel=CrashCourse" target="_blank">Link to
+                    External Resources</a>
+                <p>Algorithms are the sets of steps necessary to complete computation - they are at the heart of what
+                    our devices actually do. </p>
+
+            </li>
+            <li class="tutorial-item">
+                <h2>How To Learn Programming for BEGINNERS</h2>
+                <img src="CSlearn.jpg" alt="Logo" class="tutorial_logo">
+                <a href="https://www.youtube.com/watch?v=bJzb-RuUcMU&ab_channel=CroatCode" target="_blank">Link to
+                    External Resources</a>
+                <p>This simple tutorial will teach you how you can learn computer programming and teach yourself code.
+                </p>
+
+            </li>
+            <li class="tutorial-item">
+                <h2>Tutorial Title 10</h2>
+                <img src="Internet.jpg" alt="Logo" class="tutorial_logo">
+                <a href="https://www.youtube.com/watch?v=Dxcc6ycZ73M&ab_channel=Code.org" target="_blank">Link to
+                    External Resources</a>
+                <p>What is the internet? Short answer: a distributed packet-switched network. This is the introduction
+                    video to the series, "How the Internet Works".</p>
+
+            </li>
+            <!-- Add more tutorial items as needed -->
+        </ul>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Computer Science Hub.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for search functionality
+        function searchTutorials() {
+            var input, filter, ul, li, h2, i, txtValue;
+            input = document.getElementById('tutorialSearch');
+            filter = input.value.toUpperCase();
+            ul = document.querySelector('.tutorial-list');
+            li = ul.getElementsByTagName('li');
+
+            for (i = 0; i < li.length; i++) {
+                h2 = li[i].getElementsByTagName('h2')[0];
+                txtValue = h2.textContent || h2.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = '';
+                } else {
+                    li[i].style.display = 'none';
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

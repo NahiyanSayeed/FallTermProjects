@@ -1,0 +1,472 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhmtl11/DTD/xhtml11.dtd">
+<html>
+<!-- Title: Courses-->
+<!-- Name: Spondon Sayeed-->
+<!-- ID: 110101278-->
+
+
+<head>
+    <!-- Metadata for character encoding and page title -->
+    <meta charset="UTF-8">
+    <title> Courses - Computer Science Hub </title>
+
+    <!-- Link to external stylesheet and script files -->
+    <link rel="stylesheet" href="styles.css">
+   
+
+    <!-- Internal style definitions -->
+    <style>
+        /* Additional CSS for the table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        td {
+            color: #ddd;
+        }
+
+        .schedule-table {
+            display: none;
+        }
+
+        /* Styling for main content */
+        .main-content p {
+            color: #ddd;
+            text-align: center;
+        }
+
+        .main-content h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <!-- Logo and navigation menu -->
+            <img src="css-logo-shield.png" alt="Logo" class="logo">
+            <nav>
+                <!-- Navigation links -->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="tutorials.html">Tutorials</a></li>
+                    <li><a href="student_resources.html">Student Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Main Content Section -->
+    <section class="main-content">
+        <h1>Welcome to Our Courses</h1>
+        <p> Explore our diverse range of courses in the field of Computer Science.</p>
+        <!-- Course Table -->
+        <table>
+            <tr>
+                <th>Course Name</th>
+                <th>Status</th>
+                <th>Units</th>
+                <th>Grading Basis</th>
+                <th>Grade</th>
+                <th>Academic Program</th>
+                <th>Requirement Designation</th>
+                <th>Action</th>
+            </tr>
+            <!-- COMP 2980 Co-op Work Term I -->
+            <tr>
+                <td>COMP 2980 Co-op Work Term I</td>
+                <td>Open</td>
+                <td>3.00</td>
+                <td>Pass/Not Pass</td>
+                <td>N/A</td>
+                <td>Bach Computer Sci (Hon) Coop</td>
+                <td>Enrolled In Co-op</td>
+                <td><button onclick="toggleSchedule('schedule1')">Show Schedule</button></td>
+            </tr>
+            <!-- COMP 2560 System Programming -->
+            <tr>
+                <td>COMP 2560 System Programming</td>
+                <td>Open</td>
+                <td>3.00</td>
+                <td>Graded</td>
+                <td>N/A</td>
+                <td>Bach Computer Sci (Hon) Coop</td>
+                <td>Enrolled in Bach Computer Sci</td>
+                <td><button onclick="toggleSchedule('schedule2')">Show Schedule</button></td>
+            </tr>
+            <!-- COMP 2660 Comp Architecture II: Micro Program -->
+            <tr>
+                <td>COMP 2660 Comp Architecture II: Micro Program</td>
+                <td>Open</td>
+                <td>3.00</td>
+                <td>Graded</td>
+                <td>N/A</td>
+                <td>Bach Computer Sci (Hon) Coop</td>
+                <td>Enrolled in Bach Computer Sci</td>
+                <td><button onclick="toggleSchedule('schedule3')">Show Schedule</button></td>
+            </tr>
+            <!-- COMP 2707 Advanced Website Design -->
+            <tr>
+                <td>COMP 2707 Advanced Website Design</td>
+                <td>Open</td>
+                <td>3.00</td>
+                <td>Graded</td>
+                <td>N/A</td>
+                <td>Bach Computer Sci (Hon) Coop</td>
+                <td>Enrolled in Bach Computer Sci</td>
+                <td><button onclick="toggleSchedule('schedule4')">Show Schedule</button></td>
+            </tr>
+            <!-- COMP 3150 Database Management Systems -->
+            <tr>
+                <td>COMP 3150 Database Management Systems</td>
+                <td>Open</td>
+                <td>3.00</td>
+                <td>Graded</td>
+                <td>N/A</td>
+                <td>Bach Computer Sci (Hon) Coop</td>
+                <td>Enrolled in Bach Computer Sci</td>
+                <td><button onclick="toggleSchedule('schedule5')">Show Schedule</button></td>
+            </tr>
+            <!-- COMP 3770 Game Design, Dev & Tools -->
+            <tr>
+                <td>COMP 3770 Game Design, Dev & Tools</td>
+                <td>Open</td>
+                <td>3.00</td>
+                <td>Graded</td>
+                <td>N/A</td>
+                <td>Bach Computer Sci (Hon) Coop</td>
+                <td>Enrolled in Bach Computer Sci</td>
+                <td><button onclick="toggleSchedule('schedule6')">Show Schedule</button></td>
+            </tr>
+            <!-- COMP 1000 Key Concepts in Computer Science -->
+            <tr>
+                <td>COMP 1000 Key Concepts in Computer Science</td>
+                <td>Open</td>
+                <td>3.00</td>
+                <td>Graded</td>
+                <td>N/A</td>
+                <td>Bach Computer Sci (Hon) Coop</td>
+                <td>Enrolled in Bach Computer Sci</td>
+                <td><button onclick="toggleSchedule('schedule7')">Show Schedule</button></td>
+            </tr>
+            <!-- COMP 1410 - Introduction to Algorithms and Programming II -->
+            <tr>
+                <td>COMP 1410 Introduction to Algorithms and Programming II</td>
+                <td>Open</td>
+                <td>3.00</td>
+                <td>Graded</td>
+                <td>N/A</td>
+                <td>Bach Computer Sci (Hon) Coop</td>
+                <td>Enrolled in Bach Computer Sci</td>
+                <td><button onclick="toggleSchedule('schedule8')">Show Schedule</button></td>
+            </tr>
+            <!-- COMP 2087 - Programing for Beginners II -->
+            <tr>
+                <td>COMP 2087 - Programing for Beginners II</td>
+                <td>Open</td>
+                <td>3.00</td>
+                <td>Graded</td>
+                <td>N/A</td>
+                <td>Bach Computer Sci (Hon) Coop</td>
+                <td>N/A</td>
+                <td><button onclick="toggleSchedule('schedule9')">Show Schedule</button></td>
+            </tr>
+            <!-- COMP 2057 - Intro to the Internet -->
+            <tr>
+                <td> COMP 2057 - Intro to the Internet</td>
+                <td>Open</td>
+                <td>3.00</td>
+                <td>Graded</td>
+                <td>N/A</td>
+                <td>Bach Computer Sci (Hon) Coop</td>
+                <td>N/A</td>
+                <td><button onclick="toggleSchedule('schedule10')">Show Schedule</button></td>
+            </tr>
+            <!-- Add more courses as needed -->
+        </table>
+        <!-- Schedule Table for COMP 1410 -->
+        <div class="schedule-table" id="schedule8">
+            <h2>Schedule</h2>
+            <table>
+                <tr>
+                    <th>Class</th>
+                    <th>Session</th>
+                    <th>Meeting Dates</th>
+                    <th>Days and Times</th>
+                    <th>Seats</th>
+                </tr>
+                <tr>
+                    <td>LEC - Class Sect 30 - Class Nbr 2974</td>
+                    <td>Regular Semester (R)</td>
+                    <td>01/08/2024 - 04/08/2024</td>
+                    <td>Days: Tuesday<br>Times: 5:30PM to 8:20PM</td>
+                    <td>Open Seats 125 of 180</td>
+                </tr>
+                <tr>
+                    <td>LAB - Class Sect 53 - Class Nbr 2236</td>
+                    <td>Regular Semester (R)</td>
+                    <td>01/08/2024 - 04/08/2024</td>
+                    <td>Days: Tuesday<br>Times: 4:00PM to 5:20PM</td>
+                    <td>Open Seats 13 of 38</td>
+                </tr>
+            </table>
+        </div>
+        <!-- Schedule Table for COMP 2560 -->
+        <div class="schedule-table" id="schedule2">
+            <h2>Schedule</h2>
+            <table>
+                <tr>
+                    <th>Class</th>
+                    <th>Start/End Dates</th>
+                    <th>Days and Times</th>
+                    <th>Room</th>
+                </tr>
+                <!-- Class Sect 53 - Class Nbr 2219 -->
+                <tr>
+                    <td>LAB - Class Sect 53 - Class Nbr 2219</td>
+                    <td>09/07/2023 - 12/06/2023</td>
+                    <td>Days: Monday<br>Times: 1:00PM to 2:20PM</td>
+                    <td>Erie Hall 3119</td>
+                </tr>
+                <!-- Class Sect 2 - Class Nbr 3513 -->
+                <tr>
+                    <td>LEC - Class Sect 2 - Class Nbr 3513</td>
+                    <td>09/07/2023 - 12/06/2023</td>
+                    <td>Days: Monday Wednesday<br>Times: 5:30PM to 6:50PM</td>
+                    <td>Toldo Health Education Ctr 102</td>
+                </tr>
+                <!-- Add details for additional classes as needed -->
+            </table>
+        </div>
+        <!-- Schedule Table for COMP 2660 -->
+        <div class="schedule-table" id="schedule3">
+            <h2>Schedule</h2>
+            <table>
+                <tr>
+                    <th>Class</th>
+                    <th>Start/End Dates</th>
+                    <th>Days and Times</th>
+                    <th>Room</th>
+                </tr>
+                <!-- Class Sect 1 - Class Nbr 2227 -->
+                <tr>
+                    <td>LEC - Class Sect 1 - Class Nbr 2227</td>
+                    <td>09/07/2023 - 12/06/2023</td>
+                    <td>Days: Tuesday Thursday<br>Times: 1:00PM to 2:20PM</td>
+                    <td>Erie Hall 2123</td>
+                </tr>
+                <!-- Class Sect 53 - Class Nbr 2230 -->
+                <tr>
+                    <td>LAB - Class Sect 53 - Class Nbr 2230</td>
+                    <td>09/07/2023 - 12/06/2023</td>
+                    <td>Days: Tuesday<br>Times: 5:30PM to 6:50PM</td>
+                    <td>West Library 305C</td>
+                </tr>
+                <!-- Add details for additional classes as needed -->
+            </table>
+        </div>
+        <!-- Schedule Table for COMP 2707 -->
+        <div class="schedule-table" id="schedule4">
+            <h2>Schedule</h2>
+            <table>
+                <tr>
+                    <th>Class</th>
+                    <th>Start/End Dates</th>
+                    <th>Days and Times</th>
+                    <th>Room</th>
+                </tr>
+                <!-- Class Sect 91 - Class Nbr 2232 -->
+                <tr>
+                    <td>LEC - Class Sect 91 - Class Nbr 2232</td>
+                    <td>09/07/2023 - 12/06/2023</td>
+                    <td>Schedule: To be Announced<br>Times: To be Announced</td>
+                    <td>To be Announced</td>
+                </tr>
+                <!-- Add details for additional classes as needed -->
+            </table>
+        </div>
+        <!-- Schedule Table for COMP 3150 -->
+        <div class="schedule-table" id="schedule5">
+            <h2>Schedule</h2>
+            <table>
+                <tr>
+                    <th>Class</th>
+                    <th>Start/End Dates</th>
+                    <th>Days and Times</th>
+                    <th>Room</th>
+                </tr>
+                <!-- Class Sect 1 - Class Nbr 2235 -->
+                <tr>
+                    <td>LEC - Class Sect 1 - Class Nbr 2235</td>
+                    <td>09/07/2023 - 12/06/2023</td>
+                    <td>Days: Tuesday Thursday<br>Times: 11:30AM to 12:50PM</td>
+                    <td>Toldo Health Education Ctr 102</td>
+                </tr>
+                <!-- Add details for additional classes as needed -->
+            </table>
+        </div>
+        <!-- Schedule Table for COMP 3770 -->
+        <div class="schedule-table" id="schedule6">
+            <h2>Schedule</h2>
+            <table>
+                <tr>
+                    <th>Class</th>
+                    <th>Start/End Dates</th>
+                    <th>Days and Times</th>
+                    <th>Room</th>
+                </tr>
+                <!-- Class Sect 1 - Class Nbr 2239 -->
+                <tr>
+                    <td>LEC - Class Sect 1 - Class Nbr 2239</td>
+                    <td>09/07/2023 - 12/06/2023</td>
+                    <td>Days: Monday Wednesday<br>Times: 2:30PM to 3:50PM</td>
+                    <td>Erie Hall 1118</td>
+                </tr>
+                <!-- Add details for additional classes as needed -->
+            </table>
+        </div>
+        <!-- Schedule Table for COMP 1000 -->
+        <div class="schedule-table" id="schedule7">
+            <h2>Schedule</h2>
+            <table>
+                <tr>
+                    <th>Class</th>
+                    <th>Start/End Dates</th>
+                    <th>Days and Times</th>
+                    <th>Room</th>
+                </tr>
+                <!-- Class Sect 30 - Class Nbr 2225 -->
+                <tr>
+                    <td>LEC - Class Sect 30 - Class Nbr 2225</td>
+                    <td>01/08/2024 - 04/08/2024</td>
+                    <td>Days: Tuesday Thursday<br>Times: 4:00PM to 6:50PM</td>
+                    <td>Erie Hall 1118</td>
+                </tr>
+                <!-- Add details for additional classes as needed -->
+            </table>
+        </div>
+        <!-- Schedule Table for COMP 2980 -->
+        <div class="schedule-table" id="schedule1">
+            <h2>Schedule</h2>
+            <table>
+                <tr>
+                    <th>Class</th>
+                    <th>Start/End Dates</th>
+                    <th>Days and Times</th>
+                    <th>Room</th>
+                </tr>
+                <tr>
+                    <td>LEC - Class Sect 1 - Class Nbr 2269</td>
+                    <td>01/08/2024 - 04/08/2024</td>
+                    <td>Days: To be Announced<br>Times: To be Announced</td>
+                    <td>Face to Face-Talk to Dept</td>
+                </tr>
+            </table>
+        </div>
+        <!-- Schedule Table for COMP 2087 -->
+        <div class="schedule-table" id="schedule9">
+            <h2>Schedule</h2>
+            <table>
+                <tr>
+                    <th>Class</th>
+                    <th>Session</th>
+                    <th>Meeting Dates</th>
+                    <th>Days and Times</th>
+                    <th>Seats</th>
+                </tr>
+                <tr>
+                    <td>LEC - Class Sect 30 - Class Nbr 2974</td>
+                    <td>Regular Semester (R)</td>
+                    <td>01/08/2024 - 04/08/2024</td>
+                    <td>Days: Monday<br>Times: 5:30PM to 8:20PM</td>
+                    <td>Open Seats 125 of 180</td>
+                </tr>
+                <tr>
+                    <td>LAB - Class Sect 53 - Class Nbr 2236</td>
+                    <td>Regular Semester (R)</td>
+                    <td>01/08/2024 - 04/08/2024</td>
+                    <td>Days: Tuesday<br>Times: 4:00PM to 5:20PM</td>
+                    <td>Open Seats 13 of 38</td>
+                </tr>
+            </table>
+        </div>
+        <!-- Schedule Table for COMP 2087 -->
+        <div class="schedule-table" id="schedule10">
+            <h2>Schedule</h2>
+            <table>
+                <tr>
+                    <th>Class</th>
+                    <th>Session</th>
+                    <th>Meeting Dates</th>
+                    <th>Days and Times</th>
+                    <th>Seats</th>
+                </tr>
+                <tr>
+                    <td>LEC - Class Sect 30 - Class Nbr 2974</td>
+                    <td>Regular Semester (R)</td>
+                    <td>01/08/2024 - 04/08/2024</td>
+                    <td>Days: Monday<br>Times: 5:30PM to 8:20PM</td>
+                    <td>Open Seats 125 of 180</td>
+                </tr>
+                <tr>
+                    <td>LAB - Class Sect 53 - Class Nbr 2236</td>
+                    <td>Regular Semester (R)</td>
+                    <td>01/08/2024 - 04/08/2024</td>
+                    <td>Days: Thursday<br>Times: 4:00PM to 5:20PM</td>
+                    <td>Open Seats 13 of 38</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <!-- Copyright information -->
+            <p>&copy; 2023 Computer Science Hub.</p>
+        </div>
+    </footer>
+    <!-- JavaScript functions for toggling schedule tables -->
+    <script>
+        // Original toggleSchedule function
+        function toggleSchedule(scheduleId) {
+            var scheduleTable = document.getElementById(scheduleId);
+            scheduleTable.style.display = scheduleTable.style.display === 'none' ? 'table' : 'none';
+        }
+    </script>
+
+    <!-- Modified toggleSchedule function to handle multiple schedules -->
+    <script>
+        var currentSchedule = null;
+
+        function toggleSchedule(scheduleId) {
+            var scheduleTable = document.getElementById(scheduleId);
+
+            // Hide the current schedule if it's different
+            if (currentSchedule !== null && currentSchedule !== scheduleTable) {
+                currentSchedule.style.display = 'none';
+            }
+
+            // Toggle the display of the selected schedule
+            scheduleTable.style.display = scheduleTable.style.display === 'none' ? 'table' : 'none';
+            currentSchedule = scheduleTable;
+        }
+    </script>
+</body>
+
+</html>

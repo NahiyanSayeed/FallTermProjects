@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+<!-- Title: Contact -->
+<!-- Name: Spondon Sayeed -->
+<!-- ID: 110101278 -->
+
+<head>
+    <meta charset="UTF-8">
+    <title> Contact - Computer Science Hub </title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional CSS styles for the contact form */
+        .main-content {
+            text-align: center;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            margin-bottom: 8px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header section of the document -->
+    <header>
+        <div class="container">
+            <!-- Logo image with alternative text "Logo" -->
+            <img src="css-logo-shield.png" alt="Logo" class="logo">
+            <!-- Navigation menu with links to various sections -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="tutorials.html">Tutorials</a></li>
+                    <li><a href="student_resources.html">Student Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content section of the document -->
+    <section class="main-content">
+        <!-- Heading for the contact section -->
+        <h1>Contact Us</h1>
+
+        <!-- Contact Form -->
+        <form action="process_contact.php" method="post">
+            <!-- Input field for the username -->
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <!-- Textarea for feedback/questions -->
+            <label for="feedback">Feedback/Questions:</label>
+            <textarea id="feedback" name="feedback" rows="4" required></textarea>
+
+            <!-- Submit button for the form -->
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer section of the document -->
+    <footer>
+        <div class="container">
+            <!-- Copyright information for the footer -->
+            <p>&copy; 2023 Computer Science Hub.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

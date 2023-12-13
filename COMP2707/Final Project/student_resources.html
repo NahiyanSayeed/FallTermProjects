@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhmtl11/DTD/xhtml11.dtd">
+<html>
+<!-- Title: Student Resources-->
+<!-- Name: Spondon Sayeed-->
+<!-- ID: 110101278-->
+
+<head>
+    <meta charset="UTF-8">
+    <title> Student Resources - Computer Science Hub </title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        /* Additional CSS styles for the file upload section */
+        .file-upload-container {
+            margin-top: 20px;
+        }
+
+        .file-upload-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 300px;
+        }
+
+        .file-upload-form label {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header section of the document -->
+    <header>
+        <div class="container">
+            <!-- Logo image with alternative text "Logo" -->
+            <img src="css-logo-shield.png" alt="Logo" class="logo">
+            <!-- Navigation menu with links to various sections -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="tutorials.html">Tutorials</a></li>
+                    <li><a href="student_resources.html">Student Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content section of the document -->
+    <section class="main-content">
+        <!-- Heading for the student resources section -->
+        <h1>Student Resources</h1>
+        <!-- Short description of the section -->
+        <p>Explore additional resources such as e-books, articles, and study materials.</p>
+        <!-- Display a list of resources with links -->
+        <ul>
+            <li><a href="resources/ch1.pdf">3150 Content Slide</a></li>
+            <li><a href="resources/All Lectures for Midterm Comp 3770.pdf">3770 Content Slides</a></li>
+            <!-- Add more resources as needed -->
+        </ul>
+
+        <!-- File upload container for sharing course materials -->
+        <div class="file-upload-container">
+            <!-- Heading for the file upload section -->
+            <h2>Share Course Materials</h2>
+            <!-- Description of the file upload process -->
+            <p>Upload PDFs, slides, etc. for students.</p>
+
+            <!-- File Upload Form -->
+            <form action="upload.php" method="post" enctype="multipart/form-data" class="file-upload-form">
+                <!-- Input field for choosing a file -->
+                <input type="file" name="file" id="file" accept=".pdf, .ppt, .pptx">
+                <!-- Submit button for uploading the file -->
+                <input type="submit" value="Upload">
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer section of the document -->
+    <footer>
+        <div class="container">
+            <!-- Copyright information for the footer -->
+            <p>&copy; 2023 Computer Science Hub.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

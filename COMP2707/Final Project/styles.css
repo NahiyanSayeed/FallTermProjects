@@ -1,0 +1,237 @@
+/* CSS DOC */
+
+/* Container styles */
+.container {
+    /* This class changes the container to have auto margins and a width of 80% */
+    width: 80%;
+    margin: auto;
+}
+
+/* Header styles */
+header {
+    background: rgb(0, 128, 255);
+    /* Color */
+}
+
+/* Footer styles */
+footer {
+    /* This class changes the footer to be text aligned and have a grey background */
+    padding: 1px;
+    text-align: center;
+    background: #7d7d7d;
+}
+
+/* Navigation styles */
+nav {
+    /* This class changes nav to be center text aligned */
+    text-align: center;
+}
+
+nav ul {
+    /* This class changes the tab list to be a default of 0 */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    /* This class changes tabs to be padded and have an inline-block display and the position to be relative */
+    display: inline-block;
+    margin-left: 50px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    position: relative;
+}
+
+nav a {
+    /* This class changes the tabs to be purple, have a font size, transformation, and decoration */
+    color: #fae96d;
+    text-decoration: solid;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+nav a:hover {
+    /* This class changes the tabs at the top of the page to turn black when hovered */
+    color: #000000;
+}
+
+/* Specific tab styles */
+#home {
+    /* This class changes the home tab to have white text and be padded */
+    color: #ffffff;
+    padding-left: 20px;
+}
+
+#about,
+#skills,
+#contact {
+    /* This class changes the specified tabs to have white text and left padding */
+    color: #ffffff;
+    padding-left: 20px;
+}
+
+#about {
+    /* Additional styles for the 'about' tab */
+    text-align: center;
+}
+
+#about h2 {
+    /* This class changes heading2 in 'about' to be aligned towards the left */
+    text-align: left;
+}
+
+#about p {
+    /* This class changes the paragraph in 'about' to be padded */
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#about table {
+    /* This class changes the table in 'about' to be margined automatically */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Heading styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /* This class changes color, font size, and font for headings */
+    color: rgb(0, 128, 255);
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Paragraph styles */
+p {
+    /* This class changes the paragraphs to have line height and change color to gold */
+    color: #000000;
+    line-height: 1.5;
+}
+
+/* Image styles */
+img {
+    /* This class changes the image to have a border and be margined automatically */
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* List styles */
+ol,
+ul {
+    /* This class changes the bullet points' padding and margins */
+    list-style: circle;
+    padding: auto;
+    margin: auto;
+}
+
+/* Form label styles */
+label {
+    /* This class changes the background, text color, and border style */
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-style: inset;
+}
+
+/* Form input styles */
+input {
+    /* This class changes the font size, background color, and text color after input */
+    font-size: large;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+}
+
+/* Link styles */
+a {
+    /* This class changes the link color */
+    color: #ffffff;
+}
+
+a:hover {
+    /* This class changes the text underline after it's hovered */
+    text-decoration: wavy;
+}
+
+a:visited {
+    /* This class changes the color and style of links after it's visited */
+    color: #fae96d;
+    font-style: oblique;
+}
+
+/* Body styles */
+body {
+    /* This class changes the body to be dark grey, have a font 'Work Sans', and set text color to yellow/gold */
+    margin: 0;
+    background: #4d4d4c;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+}
+
+/* Head styles */
+head {
+    /* This class changes the background of head and font style */
+    background-color: aqua;
+    font-style: italic;
+}
+
+/* Button styles */
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px; /* Adjust padding to change button size */
+}
+
+/* Image slider button styles */
+#imageSlider button {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+
+/* Logo styles */
+.logo {
+    width: 50px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin: auto; /* Center the logo horizontally */
+    display: block;
+}
+
+/* News Logo styles */
+.News_Logo {
+    width: 500px; /* Adjust the width as needed */
+    height: 600px;
+}
+
+/* News box styles */
+.news-box h2 {
+    text-align: center;
+    font-size: 24px;
+}
+
+.news-box a {
+    color: rgb(0, 128, 255);
+}
+
+/* News container styles */
+.news-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* Individual news box styles */
+.news-box {
+    width: 30%;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

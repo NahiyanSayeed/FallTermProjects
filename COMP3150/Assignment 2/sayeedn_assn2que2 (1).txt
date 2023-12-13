@@ -1,0 +1,156 @@
+Script started on 2023-10-26 20:50:06-04:00 [TERM="xterm-256color" TTY="/dev/pts/107" COLUMNS="79" LINES="17"]
+[?2004h]0;sayeedn@delta: ~/Desktop[01;32msayeedn@delta[00m:[01;34m~/Desktop[00m$ exitscript sayeed_assn2que2.txtqlplus username/password@database_name[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Ksqlplus username/password@database_name[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+[?2004l[?2004h
+SQL*Plus: Release 21.0.0.0.0 - Production on Thu Oct 26 20:50:58 2023
+Version 21.8.0.0.0
+
+Copyright (c) 1982, 2022, Oracle.  All rights reserved.
+
+Enter user-name: [KEnter user-name: [K[?2004hEnter user-name: sayeedn[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsayeedn
+Enter password: [KEnter password: [K[?2004h[KEnter password: [17G[17G[KEnter password: *[18G[18G[KEnter password: **[19G[19G[KEnter password: ***[20G[20G[KEnter password: ****[21G[21G[KEnter password: *****[22G[22G[KEnter password: ******[23G[23G[KEnter password: *******[24G[24G[KEnter password: ********[25G[25G[KEnter password: *********[26G[26G[KEnter password: **********[27G[27G[KEnter password: ***********[28G[28G[KEnter password: ************[29G[29G[KEnter password: *************[30G[30G[17G[?2004l
+[KEnter password: [17G[?2004h
+[K
+Connected to:
+Oracle Database 11g Enterprise Edition Release 11.2.0.1.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL> [KSQL> [K[?2004hSQL> [7mCREATE TABLE FARMER([27m[C[C[C[C[C[?2004l[C[C[C[C[C[K[?2004hCREATE TABLE FARMER(
+  2  [K  2  [K[?2004h  2  [7mSSN NUMBER(3) NOT NULL,[27m[C[C[C[C[CSSN NUMBER(3) NOT NULL,[C[C[C[C[C[?2004l[C[C[C[C[C[K[?2004hSSN NUMBER(3) NOT NULL,
+  3  [K  3  [K[?2004h  3  [7mNAME VARCHAR2(15),[27m[C[C[C[C[CNAME VARCHAR2(15),[C[C[C[C[C[?2004l[C[C[C[C[C[K[?2004hNAME VARCHAR2(15),
+  4  [K  4  [K[?2004h  4  [7mAGE NUMBER(3),[27m[C[C[C[C[CAGE NUMBER(3),[C[C[C[C[C[?2004l[C[C[C[C[C[K[?2004hAGE NUMBER(3),
+  5  [K  5  [K[?2004h  5  [7mREGIONID NUMBER(3),[27m[C[C[C[C[CREGIONID NUMBER(3),[C[C[C[C[C[?2004l[C[C[C[C[C[K[?2004hREGIONID NUMBER(3),
+  6  [K  6  [K[?2004h  6  [7mPRIMARY KEY(SSN));[27m[C[C[C[C[CPRIMARY KEY(SSN));[C[C[C[C[C[?2004l[C[C[C[C[C[K[?2004hPRIMARY KEY(SSN));
+CREATE TABLE FARMER(
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+SQL> [KSQL> [K[?2004hSQL> [7mCREATE TABLE REGION[27m[C[C[C[C[CCREATE TABLE REGION([C[C[C[C[C[?2004l[C[C[C[C[C[K[?2004hCREATE TABLE REGION(
+  2  [K  2  [K[?2004h  2  [7mREGIONID NUMBER(3) NOT NULL,[27m[C[C[C[C[CREGIONID NUMBER(3) NOT NULL,[C[C[C[C[C[?2004l[C[C[C[C[C[K[?2004hREGIONID NUMBER(3) NOT NULL,
+  3  [K  3  [K[?2004h  3  [7mREGNAME VARCHAR2(15) NOT NULL,[27m[C[C[C[C[CREGNAME VARCHAR2(15) NOT NULL,[C[C[C[C[C[?2004l[C[C[C[C[C[K[?2004hREGNAME VARCHAR2(15) NOT NULL,
+  4  [K  4  [K[?2004h  4  [7mCROPBUDGET NUMBER(10,2),[27m[C[C[C[C[CCROPBUDGET NUMBER(10,2),[C[C[C[C[C[?2004l[C[C[C[C[C[K[?2004hCROPBUDGET NUMBER(10,2),
+  5  [K  5  [K[?2004h  5  [7mMANAGERID NUMBER(3),[27m[C[C[C[C[CMANAGERID NUMBER(3),[C[C[C[C[C[?2004l[C[C[C[C[C[K[?2004hMANAGERID NUMBER(3),
+  6  [K  6  [K[?2004h  6  [7mPRIMARY KEY (REGIONID),[27m[C[C[C[C[CPRIMARY KEY (REGIONID),[C[C[C[C[C[?2004l[C[C[C[C[C[K[?2004hPRIMARY KEY (REGIONID),
+  7  [K  7  [K[?2004h  7  [7mFOREIGN KEY(MANAGERID) REFERENCES FARMER(SSN));[27m[C[C[C[C[CFOREIGN KEY(MANAGERID) REFERENCES FARMER(SSN));[C[C[C[C[C[?2004l[C[C[C[C[C[K[?2004hFOREIGN KEY(MANAGERID) REFERENCES FARMER(SSN));
+
+Table created.
+
+SQL> [KSQL> [K[?2004hSQL> [7mCREATE TABLE GROWSCROPS[27m[C[C[C[C[CCREATE TABLE GROWSCROPS([C[C[C[C[C[?2004l[C[C[C[C[C[K[?2004hCREATE TABLE GROWSCROPS(
+  2  [K  2  [K[?2004h  2  [7mSSN NUMBER(3) NOT NULL,[27m[C[C[C[C[CSSN NUMBER(3) NOT NULL,[C[C[C[C[C[?2004l[C[C[C[C[C[K[?2004hSSN NUMBER(3) NOT NULL,
+  3  [K  3  [K[?2004h  3  [7mREGIONID NUMBER(3) NOT NULL,[27m[C[C[C[C[CREGIONID NUMBER(3) NOT NULL,[C[C[C[C[C[?2004l[C[C[C[C[C[K[?2004hREGIONID NUMBER(3) NOT NULL,
+  4  [K  4  [K[?2004h  4  [7mCROP VARCHAR2 (15) NOT NULL, [27m[C[C[C[C[CCROP VARCHAR2 (15) NOT NULL, [K[C[C[C[C[C[?2004l[C[C[C[C[C[K[?2004hCROP VARCHAR2 (15) NOT NULL,
+  5  [K  5  [K[?2004h  5  [7mREVENUE NUMBER(10, 2),[27m[C[C[C[C[CREVENUE NUMBER(10, 2),[K,[C[C[C[C[C[?2004l[C[C[C[C[C[K[?2004hREVENUE NUMBER(10, 2),
+  6  [K  6  [K[?2004h  6  [7mPRIMARY KEY(SSN, REGIONID, CROP),[27m[C[C[C[C[CPRIMARY KEY(SSN, REGIONID, CROP),[C[C[C[C[C[?2004l[C[C[C[C[C[K[?2004hPRIMARY KEY(SSN, REGIONID, CROP),
+  7  [K  7  [K[?2004h  7  [7mFOREIGN KEY(SSN) REFERENCES FARMER(SSN),[27m[C[C[C[C[CFOREIGN KEY(SSN) REFERENCES FARMER(SSN),[C[C[C[C[C[?2004l[C[C[C[C[C[K[?2004hFOREIGN KEY(SSN) REFERENCES FARMER(SSN),
+  8  [K  8  [K[?2004h  8  [7mFOREIGN KEY(REGIONID) REFERENCES REGION(REGIONID));[27m[C[C[C[C[CFOREIGN KEY(REGIONID) REFERENCES REGION(REGIONID));[C[C[C[C[C[?2004l[C[C[C[C[C[K[?2004hFOREIGN KEY(REGIONID) REFERENCES REGION(REGIONID));
+[K
+Table created.
+
+SQL> [KSQL> [K[?2004hSQL> [7m INSERT INTO FARMER VALUES (10, 'Jobe Bata', 65, 1);[27m[C[C[C[C[C INSERT INTO FARMER VALUES (10, 'Jobe Bata', 65, 1);[C[C[C[C[C[C[?2004l[C[C[C[C[C[K[?2004h INSERT INTO FARMER VALUES (10, 'Jobe Bata', 65, 1);
+
+1 row created.
+
+SQL> [KSQL> [K[?2004hSQL> [7mINSERT INTO REGION VALUES(1, 'SWO', 5.0, 10);[27m[C[C[C[C[CINSERT INTO REGION VALUES(1, 'SWO', 5.0, 10);[C[C[C[C[C[?2004l[C[C[C[C[C[K[?2004hINSERT INTO REGION VALUES(1, 'SWO', 5.0, 10);
+
+1 row created.
+
+SQL> [KSQL> [K[?2004hSQL> [7mINSERT INTO GROWSCROPS VALUES (10, 1, 'corn', 2.50);[27m
+[A[C[C[C[C[CINSERT INTO GROWSCROPS VALUES (10, 1, 'corn', 2.50);
+[A[C[C[C[C[C[?2004l[C[C[C[C[C[K
+[K[A[C[C[C[C[C[?2004hINSERT INTO GROWSCROPS VALUES (10, 1, 'corn', 2.50);
+
+1 row created.
+
+SQL> 
+SQL> [KSQL> [K[?2004hSQL> [7mCOMMIT;[27m[C[C[C[C[CCOMMIT;[C[C[C[C[C[?2004l[C[C[C[C[C[K[?2004hCOMMIT;
+
+Commit complete.
+
+SQL> [KSQL> [K[?2004hSQL> COMMIT;[C[C[C[C[CINSERT INTO GROWSCROPS VALUES (10, 1, 'corn', 2.50);[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7PREGION VALUES(1, 'SWO', 5.0, 10);[C[C[C[C[C INSERT INTO FARMER VALUES (10, 'Jobe Bata', 65, 1);[C[1P[1P[C[1P[1P[1P[1P[1P[1P[1P[1@A[1@b[1@a[1@g[1@a[1@l[1@e[1@ [1@M[1@c[1@C[1P[1@K[1@o[1@m[1@b[1P[1P[1P[1P[1@C[1@o[1@m[1@b[1P[1P[1P[1P[1@C[1P[1@K[1@o[1@l[1@e[1@m[1@e[1@n[C[C[C[C[C[15PINSERT INTO REGION VALUES(1, 'SWO', 5.0, 10);[C[C[C[C[C INSERT INTO FARMER VALUES (10, 'Abagale McKolemen', 65, 1);[C[1P[1P[1@2[1@8[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1@8[1@2[C[C[C[1P);7);[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[K[?2004h INSERT INTO FARMER VALUES (28, 'Abagale McKolemen', 82, 7);
+ INSERT INTO FARMER VALUES (28, 'Abagale McKolemen', 82, 7)
+                                *
+ERROR at line 1:
+ORA-12899: value too large for column "SAYEEDN"."FARMER"."NAME" (actual: 17,
+maximum: 15)
+
+
+SQL> [KSQL> [K[?2004hSQL>  INSERT INTO FARMER VALUES (28, 'Abagale McKolemen', 82, 7);[C[C[C[C[C[C[1P[1P[1P[C[C[C[C[C[?2004l[C[C[C[C[C[K[?2004h INSERT INTO FARMER VALUES (28, 'Abagale McKole', 82, 7);
+
+1 row created.
+
+SQL> [KSQL> [K[?2004hSQL>  INSERT INTO FARMER VALUES (28, 'Abagale McKole', 82, 7);[3@men[C[C[C[C[C[C[C[C[C[C[3P[C[C[C[C[C[C[C[C[C[C[1P[1P[1@2[1@4[1P[1@6[1P[1P[1@7[1@4[1P[1P[1@3[1@5[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@F[1@i[1@n[1@n[1@ [1@R[1@i[1@d[1@e[1@r[1P[1P[1P[1P[1P[1@H[1@a[1@y[1@e[1@s[C[C[C[C[C[C[1P[1P[1@1[1@6[C[C[C[1P);1);6);[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[K[?2004h INSERT INTO FARMER VALUES (35, 'Finn Hayes', 16, 16);
+
+1 row created.
+
+SQL> [KSQL> [K[?2004hSQL>  INSERT INTO FARMER VALUES (35, 'Finn Hayes', 16, 16);28, 'Abagale McKole', 82, 7);[3@men[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CCOMMIT;[K[C[C[C[C[C[?2004l[C[C[C[C[C[K[?2004hCOMMIT;
+
+Commit complete.
+
+SQL> [KSQL> [K[?2004hSQL> COMMIT;[C[C[C[C[C INSERT INTO FARMER VALUES (35, 'Finn Hayes', 16, 16);28, 'Abagale McKole', 82, 7);[3@men[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CCOMMIT;[K[C[C[C[C[CINSERT INTO GROWSCROPS VALUES (10, 1, 'corn', 2.50);[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7PREGION VALUES(1, 'SWO', 5.0, 10);[C[C[1P[1@2[1P[1@7[C[C[C[C[C[C[1P[1P[1P[1@S[1@A[1@S[C[C[C[C[C[1@3[1P[1P[1P[1@3[1@.[C[1P[1@8[C[C[C[C[C[1P);[1P);4);5);[C[C[C[C[C[?2004l[C[C[C[C[C[K[?2004hINSERT INTO REGION VALUES(7, 'SAS', 3.8, 45);
+INSERT INTO REGION VALUES(7, 'SAS', 3.8, 45)
+*
+ERROR at line 1:
+ORA-02291: integrity constraint (SAYEEDN.SYS_C00360172) violated - parent key
+not found
+
+
+SQL> [KSQL> [K[?2004hSQL> INSERT INTO REGION VALUES(7, 'SAS', 3.8, 45);[C[1P[1@0[C[C[C[C[C[?2004l[C[C[C[C[C[K[?2004hINSERT INTO REGION VALUES(7, 'SAS', 3.0, 45);
+INSERT INTO REGION VALUES(7, 'SAS', 3.0, 45)
+*
+ERROR at line 1:
+ORA-02291: integrity constraint (SAYEEDN.SYS_C00360172) violated - parent key
+not found
+
+
+SQL> [KSQL> [K[?2004hSQL> INSERT INTO REGION VALUES(7, 'SAS', 3.0, 45);[1P);[1P);7);[C[C[C[C[C[?2004l[C[C[C[C[C[K[?2004hINSERT INTO REGION VALUES(7, 'SAS', 3.0, 7);
+INSERT INTO REGION VALUES(7, 'SAS', 3.0, 7)
+*
+ERROR at line 1:
+ORA-02291: integrity constraint (SAYEEDN.SYS_C00360172) violated - parent key
+not found
+
+
+SQL> [KSQL> [K[?2004hSQL> INSERT INTO REGION VALUES(7, 'SAS', 3.0, 7);[C[1P);1);0);[C[C[C[C[C[?2004l[C[C[C[C[C[K[?2004hINSERT INTO REGION VALUES(7, 'SAS', 3.0, 10);
+
+1 row created.
+
+SQL> [KSQL> [K[?2004hSQL> INSERT INTO REGION VALUES(7, 'SAS', 3.0, 10);[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P7);10);[C[C[C[C[C[KINSERT INTO REGION VALUES(7, 'SAS', 3.0, 10);[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1@1[1@6[C[C[C[C[C[C[1P[1P[1P[1@E[1@R[1@E[C[C[C[C[1P[1P[1P[1@M[1@R[1@M[C[C[C[C[C[1@9[C[1@.[1@9[1P[1P[1P[1P[1@9[C[C[1P[1@9[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[K[?2004hINSERT INTO REGION VALUES(16, 'MRM', 9.9, 10);
+
+1 row created.
+
+SQL> [KSQL> [K[?2004hSQL> INSERT INTO REGION VALUES(16, 'MRM', 9.9, 10);[1P7, 'SAS', 3.0[C[C[C[C[C[C[1P7);45);8[C[C[C[C[C[C[C[C[C[C[CCOMMIT;[K[C[C[C[C[C INSERT INTO FARMER VALUES (35, 'Finn Hayes', 16, 16);28, 'Abagale McKole', 82, 7);[3@men[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CCOMMIT;[K[C[C[C[C[CINSERT INTO GROWSCROPS VALUES (10, 1, 'corn', 2.50);[C[C[C[C[CCOMMIT;[K[C[C[C[C[C INSERT INTO FARMER VALUES (28, 'Abagale McKolemen', 82, 7);[C[C[C[C[CCOMMIT;[K[C[C[C[C[C INSERT INTO FARMER VALUES (28, 'Abagale McKolemen', 82, 7);[3P[C[C[C[C[C[C[C[C[C[C[3P35, 'Finn Hayes', 16, 16);[C[C[C[C[CCOMMIT;[K[C[C[C[C[C INSERT INTO FARMER VALUES (35, 'Finn Hayes', 16, 16);28, 'Abagale McKole', 82, 7);[3@men[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CCOMMIT;[K[C[C[C[C[CINSERT INTO GROWSCROPS VALUES (10, 1, 'corn', 2.50);[C[C[1P[1P[1@2[1@8[C[C[C[1P[1@7[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1@[[1@p[1P[1P[1@p[1@o[1@r[1@t[1P[1P[1@e[1@t[1P[1P[1@t[1@e[1@o[1P[1@t[1@o[1@s[1P[1P[1P[1@e[1@o[1P[1P[1P[1@o[1@t[1@o[1@s[1P[1P[1P[1P[1@e[1@t[1@o[1@s[1P[1P[1P[1P[1P[1@t[1@a[1@t[1@o[1@e[1@s[C[C[C[C[C[C[C[C[1P.50);3.50);[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[K[?2004hINSERT INTO GROWSCROPS VALUES (28, 7, 'potatoes', 3.50);
+
+1 row created.
+
+SQL> [KSQL> [K[?2004hSQL> INSERT INTO GROWSCROPS VALUES (28, 7, 'potatoes', 3.50);[1P[1P[1@3[1@5[C[C[C[1P[1@1[1@6[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1@r[1@i[1@c[1@e[1@ [1P[C[C[C[C[C[C[C[C[C[1P);0);[1P.50);5.50);[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[K[?2004hINSERT INTO GROWSCROPS VALUES (35, 16, 'rice', 5.50);
+
+1 row created.
+
+SQL> [KSQL> [K[?2004hSQL> INSERT INTO GROWSCROPS VALUES (35, 16, 'rice', 5.50);28, 7, 'potatoes', 3.50);[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10PREGION VALUES(16, 'MRM', 9.9, 10);[1P7, 'SAS', 3.0[C[C[C[C[C[C[1P7);45);8[C[C[C[C[C[C[C[C[C[C[CCOMMIT;[K[C[C[C[C[C INSERT INTO FARMER VALUES (35, 'Finn Hayes', 16, 16);[C[C[C[C[CCOMMIT;[K[C[C[C[C[C[?2004l[C[C[C[C[C[K[?2004hCOMMIT;
+
+Commit complete.
+
+SQL> [KSQL> [K[?2004hSQL> select * from cat;[C[C[C[C[C[?2004l[C[C[C[C[C[K[?2004hselect * from cat;
+
+TABLE_NAME		       TABLE_TYPE
+------------------------------ -----------
+REGION			       TABLE
+GROWSCROPS		       TABLE
+FARMER			       TABLE
+
+SQL> [KSQL> [K[?2004hSQL> select * from cat;[K[K[K[KFarmer;[C[C[C[C[C[?2004l[C[C[C[C[C[K[?2004hselect * from Farmer;
+
+       SSN NAME 		  AGE	REGIONID
+---------- --------------- ---------- ----------
+	10 Jobe Bata		   65	       1
+	28 Abagale McKole	   82	       7
+	35 Finn Hayes		   16	      16
+
+SQL> [KSQL> [K[?2004hSQL> exit[?2004l[C[C[C[C[C[K[?2004hexit
+Disconnected from Oracle Database 11g Enterprise Edition Release 11.2.0.1.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+[?2004l[?2004h]0;sayeedn@delta: ~/Desktop[01;32msayeedn@delta[00m:[01;34m~/Desktop[00m$ exit
+[?2004lexit
+
+Script done on 2023-10-26 21:09:14-04:00 [COMMAND_EXIT_CODE="0"]
